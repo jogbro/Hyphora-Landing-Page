@@ -11,9 +11,9 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <div class="min-h-screen">
-        <div class="bg-gray-100 dark-mode:bg-gray-900 sticky">
-            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="min-h-screen" style="background-image: url(assets/images/bg.png);">
+        <div class="bg-transparent dark-mode:bg-gray-900">
+            <div class="w-full bg-transparent text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
                 <div x-data="{ open: true }"
                     class="flex xl:ml-10  flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div class="flex flex-row items-start justify-between p-4">
@@ -32,19 +32,19 @@
                             </svg>
                         </button>
                     </div>
-                    <nav :class="{'flex': open, 'hidden': !open}"
+                    <nav :class="{'flex': open, 'hidden': !open}" style="color: transparent;"
                         class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                        <a class="  px-4 py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="  px-4 text-black py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="#">About</a>
-                        <a class="  px-4 py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="  px-4 text-black py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="#">Contact</a>
-                        <a class="  px-4 py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="  px-4  text-black py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="#">Sign Up</a>
                     </nav>
                 </div>
             </div>
         </div>
-        <main style="background-image: url(assets/images/bg.png);">
+        <main>
             <section id="hero">
                 <div class="grid grid-cols-2 grid-flow-col  flex flex-col md-col-5 sm:flex-row items-start py-8"
                     style="padding-left: 10rem; padding-right: 5rem;" data-aos="fade-right" data-aos-duration="1000">
