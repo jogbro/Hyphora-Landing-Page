@@ -1,0 +1,31 @@
+{
+  "name": "hyphora-web",
+  "version": "1.0.0",
+  "description": "Landing page for Hyphora, an academic social networking platform built for students. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "build: tailwind.css build -o output.css"
+  },
+  "keywords": [
+    "Social",
+    "Media",
+    "Startup",
+    "Networking",
+    "Resources",
+    "Education",
+    "EdTech"
+  ],
+  "author": "Manish Balamurugan (Hyphora)",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^2.0.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10"
+  },
+  "peerDependencies": {
+    "postcss-cli": "^8.0.0"
+  }
+}
