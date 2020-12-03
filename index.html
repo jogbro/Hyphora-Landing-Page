@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <div class="min-h-screen" style="background-image: url(assets/images/bg.png);">
         <div class="bg-transparent dark-mode:bg-gray-900">
-            <div class="w-full bg-transparent text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+            <div class="w-full space-x-20 bg-transparent text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
                 <div x-data="{ open: true }"
                     class="flex xl:ml-10  flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div class="flex flex-row items-start justify-between p-4">
@@ -33,7 +33,7 @@
                         </button>
                     </div>
                     <nav :class="{'flex': open, 'hidden': !open}" style="color: transparent;"
-                        class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                        class="flex-row flex-grow hidden items-end  pr-0 md:pr-0">
                         <a class="  px-4 text-black py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="#">About</a>
                         <a class="  px-4 text-black py-2 mt-2 text-lg bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -80,47 +80,53 @@
                     </div>
                 </div>
             </section>
-            <section id="about" style="padding-top: 2rem;">
-                <div class="flex items-center">
-                    <div class="w-1/2 md:w-6/12 px-4 mr-auto ml-auto" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="justify-center flex flex-wrap relative">
-                            <img style="transform: scale(0.75);" src="assets/images/ui-tile.png" alt="Mockup 2">
-                        </div>
-                    </div>
-                    <div class="w-1/4 md:w-4/12 px-12 md:px-4 ml-auto mr-auto" data-aos="fade-left"
-                        data-aos-duration="1000">
-                        <h1 class="text-3xl mb-2 leading-normal" style="font-size: 50;">Meet Hyphora</h1>
-                        <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Hyphora brings together
+            <section id="about" style="padding-top: 7rem; padding-bottom: 7rem;">
+                <div class="col items-center">
+                    <div class="w-full md:w-3/4 items-center px-12 md:px-2 ml-auto mr-auto" data-aos="fade-up"
+                        data-aos-duration="1500">
+                        <h1 class="text-6xl mb-2 items-center leading-normal mx-auto md:w-1/2">Meet Hyphora</h1>
+                        <p class="items-center text-5xl font-extralight text-gray-800 leading-loose">Hyphora brings
+                            together
                             everything that is necessary for
-                            modern students to thrive. We provide students with
-                            a unified platform where students can:
+                            modern students to thrive.
                         </p>
                     </div>
                 </div>
             </section>
             <section style="padding-top: 5rem;">
-                <div class="flex items-start flex-col xl:ml-28">
-                    <div style="font-weight: normal; font-size: 40;" data-aos="fade-right" data-aos-duration="1000">
-                        <h1 class="text-3xl mb-2 leading-normal" style="font-size: 40;">Explore
-                            opportunities, events,</h1>
-                        <h1 class="text-3xl mb-2 leading-normal" style="font-size: 40;">notes, and other
-                            user-generated content</h1>
+                <div class="flex items-end flex-col mr-20 xl:ml-28">
+                    <div style="font-weight: normal; font-size: 40;" data-aos="fade-right" data-aos-duration="1500">
+                        <h1 class="text-3xl  mb-2 leading-normal" style="font-size: 40;">Explore
+                            internships, events</h1>
+                        <h1 class="text-3xl leading-normal" style="font-size: 40;">jobs, competitions, scholarships, and
+                            more.</h1>
                     </div>
                     <div class="items-start" data-aos="fade-left" data-aos-duration="1000">
-                        <img style="transform: scale(0.75);" src="assets/images/ui-tile-2.png" alt="Mockup 3">
+                        <img style="transform: scale(0.75);" src="assets/images/events.svg" alt="Mockup 1">
                     </div>
                 </div>
             </section>
             <section style="padding-top: 5rem;">
-                <div class="flex items-end flex-col xl:mr-28">
-                    <div style="font-weight: normal; font-size: 40;" data-aos="fade-left" data-aos-duration="1000">
-                        <h1 class="text-3xl mb-2 leading-normal" style="font-size: 40;">Connect with your
+                <div class="flex items-start flex-col xl:ml-28">
+                    <div style="font-weight: normal; font-size: 40;" data-aos="fade-right" data-aos-duration="1500">
+                        <h1 class="text-3xl  mb-2 leading-normal" style="font-size: 40;">Discover helpful notes, resources, </h1>
+                        <h1 class="text-3xl leading-normal" style="font-size: 40;">and advice from students just like you</h1>
+                    </div>
+                    <div class="items-start" data-aos="fade-left" data-aos-duration="1000">
+                        <img style="transform: scale(0.75);" src="assets/images/resources.png" alt="Mockup 2">
+                    </div>
+                </div>
+            </section>
+            <section style="padding-top: 5rem;">
+                <div class="flex items-end flex-col mr-20">
+                    <div style="font-weight: normal; font-size: 40;" data-aos="fade-left" data-aos-duration="1500">
+                        <h1 class="text-3xl  mb-2 leading-normal" style="font-size: 40;">Connect with your
                             classmates</h1>
                         <h1 class="text-3xl mb-2 leading-normal" style="font-size: 40;">and other
                             ambitious students across the nation.</h1>
                     </div>
                     <div class="items-start" data-aos="fade-right" data-aos-duration="1000">
-                        <img style="transform: scale(0.75);" src="assets/images/ui-tile-3.png" alt="Mockup 3">
+                        <img style="transform: scale(0.75);" src="assets/images/connect.svg" alt="Mockup 3">
                     </div>
                 </div>
             </section>
